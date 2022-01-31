@@ -6,3 +6,20 @@ body {
 a {
   color: #00B7FF;
 }
+
+ul {
+  list-style: none;
+}
+
+.message h4 {
+  color: gray;
+  font-weight: 400;
+}
+
+label {
+  display: block;
+}
+
+button[type="submit"] {
+  margin-top: 12px;
+}

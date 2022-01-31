@@ -2,9 +2,10 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
-  ul
+  div(class="message")
     each message in messages
-      li #{message.text}, #{message.user}, #{message.added}
+      div 
+        h3 #{message.text}
+        h4 - #{message.user} (#{moment(message.added).format('ddd, MMM Do [at] YYYY h:m A')})
   button(type="button") 
      a(href="/new") Add New Message 

@@ -3,10 +3,10 @@ extends layout
 block content
   h1 Add new message
   form(action="/new", method="post") 
-    div 
+    div
       label(for="messageText") Message:
       textarea#messageText(name="messageText", cols="30", rows="10")
-    div 
+    div
       label(for="authorName") Author:
       input#authorName(type="text", name="authorName")
     button(type="submit") Submit
